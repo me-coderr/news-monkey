@@ -1,0 +1,84 @@
+@keyframes rotateFullCircle {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+
+.brand{
+    color: black;
+    display: inline-flex;
+    align-items: center;
+}
+
+.brand-logo-container{
+    margin-right: 5px;
+}
+
+/* .brand-logo{
+
+} */
+
+.brand-name{
+    font-size: 3.5rem;
+}
+
+.nav-items-wrapper{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-item{
+    color: black;
+    padding: 1.5rem;
+    border-radius: 100px;
+    margin: 1.2rem;
+    font-size: 1.5rem;
+    background-color: rgb(122, 86, 15) 
+}
+
+.line-break{
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 1px solid rgb(122, 86, 15) ;
+}
+
+/* animations */
+
+.nav-item:hover{
+    transform: scale(1.2);
+    background-color: rgba(245, 222, 179, 0.596);
+}
+
+.nav-item:active{
+    transform: scale(1);
+}
+
+.brand:hover{
+    .brand-logo{
+        animation: rotateFullCircle 3s ease-in-out 1;
+    }
+}
